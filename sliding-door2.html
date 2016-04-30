@@ -6,21 +6,23 @@
 	<style type="text/css">
 		body,ul{margin: 0;padding: 0;}
 		li{list-style: none;}
-		a{text-decoration: none;display: block;padding: 0 30px;line-height: 24px;color: #4a4a40;}
-		/*a:hover{background: url(picture/sd2bghh.png) no-repeat;}*/
+		a{text-decoration: none;display: block;}
+		span{padding: 0 30px;line-height: 24px;color: #4a4a40;}
 		body{background: #231f20;}
-		.wrap{margin: 30px auto;}
-		.wrap li{float: left;height: 24px;background: url(picture/sd2bg.png) repeat-x;margin-right: 5px;}
-		.left{background: url(picture/sd2bgl.png) no-repeat left;}
-		.right{background: url(picture/sd2bgr.png) no-repeat right;}
+		.wrap{margin: 30px;}
+		.wrap li{float: left;height: 24px;margin-right: 5px;}
+		.wrap a{background: url(sliding-door/sd2bgl.png) no-repeat left;float: left;}
+		.wrap span{background: url(sliding-door/sd2bgr.png) no-repeat right;float: left;}
+		.wrap a:hover{background: url(sliding-door/sd2bghl.png) no-repeat left;}
+		.wrap a:hover span{background: url(sliding-door/sd2bghr.png) no-repeat right;} 
 	</style>
 </head>
 <body>
 	<ul class="wrap">
-		<li><div class="left"><div class="right"><a href="">Home</a></div></div></li>
-		<li><div class="left"><div class="right"><a href="">About us</a></div></div></li>
-		<li><div class="left"><div class="right"><a href="">Contact us</a></div></div></li>
-		<li><div class="left"><div class="right"><a href="">Do you see so wide website navigation?aaaaaaaaaaas</a></div></div></li>
+		<li><a href=""><span>Home</span></a></li>
+		<li><a href=""><span>About us</span></a></li>
+		<li><a href=""><span>Contact us</span></a></li>
+		<li><a href=""><span>Products</span></a></li>
 	</ul>
 </body>
 </html>

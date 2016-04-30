@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>雪碧图2</title>
 	<style type="text/css">
-	/*目前就不做雪碧图了，只是写出整体框架就够累了，以后有机会再写吧！还有部分问题以后在解决。*/
 		body,h3,ul,h4{margin: 0;padding: 0;font-size: 12px;}
 		li{list-style: none;}
 		a{text-decoration: none;color: #000;}
@@ -12,46 +11,52 @@
 		.clear{-ms-zoom: 1;}
 		.wrap{width: 932px;height: 350px;background: url(picture/spbg1.png) repeat-x;padding: 10px 9px 11px 7px;margin: 30px auto;}
 		.left{width: 227px;float: left;margin-right: 11px;}
-		.head{height: 44px;line-height: 44px;background: url(picture/spbgh.png) repeat-x;}
-		.headl{background: url(picture/spbghl.png) no-repeat left;}
-		.headr{background: url(picture/spbghr.png) no-repeat right;}
-		.headr h3{padding-left: 41px;font-size: 14px;color: #b51f28;}
-		.main{background: url(picture/spbgm.png) repeat-x left bottom;}
-		.mainl{background: url(picture/spbgml.png) no-repeat left bottom;}
-		.mainr{background: url(picture/spbgmr.png) no-repeat right bottom;}
-		img{padding: 6px 21px 6px 18px;background: #fff;margin-left: 14px;margin-top: 9px;}
-		.left ul{padding: 8px 2px 29px 10px;}
-		.left li{float: left; margin: 0 5px 6px 0;width: 66px;height: 24px;}
-		.left li a,.center li a{line-height: 24px;width: 66px;height: 24px;display: block;background:url(picture/spi1.png) no-repeat;text-align: center;}
-		.left li a:hover,.center li a:hover{background: url(picture/spi2.png) no-repeat;color: #b51f28;}
+		.headr h3{padding-left: 5px;font-size: 14px;color: #b51f28;}
+		.mainl,.mainr{background: url(picture/spm.png) no-repeat;}
+		.mainl{background-position: 0 0;background-repeat: repeat-y;}
+		.mainr{background-position: right 0;background-repeat: repeat-y;}
+		.main{background: #ffd3a6;margin: 0 4px;}
+		.headl,.headr,.head,.footl,.footr,.foot{background: url(picture/spbg2.png) no-repeat;}
+		.headr{background-position: right -44px; }
+		.head{background-position: 0 -88px;background-repeat: repeat-x;height: 44px;line-height: 44px;margin: 0 5px 0 35px;}
+		.footl{background-position: 0 -132px;}
+		.footr{background-position: right -132px;}
+		.foot{background-position: 0 -161px;height: 29px;background-repeat: repeat-x;margin: 0 6px;}
+		img{padding: 6px 21px 6px 18px;background: #fff;margin-left: 8px;margin-top: 9px;}
+		.left ul{padding: 8px 2px 0 0;}
+		.left li{float: left; margin: 0 1px 6px 4px;}
+		.left a,.center a,.left a:hover,.center a:hover,.rightt a,.rightt a:hover,.rightb div{background: url(picture/spbg3.png) no-repeat;}
+		.left a,.center a{line-height: 24px;width: 66px;height: 24px;display: block;text-align: center;}
+		.left a:hover,.center a:hover{color: #b51f28;background-position: 0 -26px;}
 		.center{width: 453px;float: left;margin-right: 14px;}
-		.center ul{padding: 7px 9px 39px 12px;}
+		.center ul{padding: 7px 3px 10px 6px;}
 		.center li{width: 142px;height: 196px;float: left;}
-		/*.center li:hover{background: #fd9a34}*/
 		.center .main img{padding: 3px;background: #fff;}
 		.center h4{padding-left: 25px;line-height: 26px;}
 		.center li a{margin-left: 38px;margin-top: 4px;}
 		.right{float: left;width: 227px;}
 		.rightt{padding-left: 8px;}
 		.right .rightt li{margin-right: 5px;float: left;}
-		.rightt li a{width: 55px;height: 23px;background: url(picture/spi3.png) no-repeat;display: block;line-height: 24px;text-align: center;}
-		.rightt li a:hover{background: url(picture/spi4.png) no-repeat;color: #b51f28;}
+		.rightt a{width: 55px;height: 23px;display: block;line-height: 24px;text-align: center;background-position: -68px 0;}
+		.rightt a:hover{color: #b51f28;background-position: -68px -25px;}
 		.rightb{padding: 17px 0 9px 21px;}
-		.rightb li{height: 24px;width: 181px;border-bottom: 1px dashed #000;line-height: 20px;background: url(picture/spi5.png) no-repeat right center;}
-		.foot{text-decoration: underline;float: right;padding-right: 14px;color: #b51f28;display: block;padding-bottom: 31px;font-weight: bold;}
+		.rightb li{height: 24px;width: 181px;border-bottom: 1px dashed #000;line-height: 24px;}
+		.rightb span{width: 17px;display: block;float: left;font-weight: bold;}
+		.rightb div{background-position: -125px 0;width: 15px;height: 10px;margin-top: 8px;float: right;}
+		.footer{text-decoration: underline;float: right;padding-right: 14px;color: #b51f28;display: block;padding-bottom: 2px;font-weight: bold;}
 	</style>
 </head>
 <body>
 	<div class="wrap">
 		<div class="left clear">
-			<div class="head">
-			<div class="headl">
-				<div class="headr"><h3>音乐达人</h3></div>
+			<div class="headl clear">
+			<div class="headr">
+				<div class="head"><h3>音乐达人</h3></div>
 			</div>								
 			</div>
-			<div class="main">
 			<div class="mainl">
-				<div class="mainr">
+			<div class="mainr">
+				<div class="main">
 				<img src="picture/sprite2-1.png">
 				<ul class="clear">
 					<li><a href="">个人资料</a></li>
@@ -64,17 +69,22 @@
 				</div>
 			</div>	
 			</div>
+			<div class="footl">
+				<div class="footr">
+					<div class="foot"></div>
+				</div>
+			</div>
 		</div>
 		<div class="center clear">
-			<div class="head">
 			<div class="headl">
-				<div class="headr"><h3>视频</h3>
+			<div class="headr">
+				<div class="head"><h3>视频</h3>
 				</div>
 			</div>								
 			</div>
-			<div class="main">
-				<div class="mainl">
-					<div class="mainr">
+			<div class="mainl">
+				<div class="mainr">
+					<div class="main">
 					<ul class="clear">
 						<li><img src="picture/spc1.png" alt=""><h4>爱的初体验 223票</h4><a href="">投票</a></li>
 						<li><img src="picture/spc1.png" alt=""><h4>爱的初体验 223票</h4><a href="">投票</a></li>
@@ -83,32 +93,44 @@
 					</div>
 				</div>	
 			</div>
+			<div class="footl">
+				<div class="footr">
+					<div class="foot"></div>
+				</div>
+			</div>
 		</div>
 		<div class="right">
-			<div class="head">
 			<div class="headl">
-				<div class="headr"><h3>音乐盒</h3></div>
+			<div class="headr">
+				<div class="head"><h3>音乐盒</h3></div>
 			</div>								
 			</div>
-			<div class="main">
 			<div class="mainl">
-				<div class="mainr clear">
+			<div class="mainr">
+				<div class="main clear">
 				<ul class="rightt clear">
 					<li><a href="">歌单一</a></li>
 					<li><a href="">歌单二</a></li>
 					<li><a href="">歌单三</a></li>
 				</ul>
 				<ul class="rightb">
-					<li><a href="">1.有没有人告诉你 - 陈楚生</a></li>
-					<li><a href="">1.有没有人告诉你 - 陈楚生</a></li>
-					<li><a href="">1.有没有人告诉你 - 陈楚生</a></li>
-					<li><a href="">1.有没有人告诉你 - 陈楚生</a></li>
-					<li><a href="">1.有没有人告诉你 - 陈楚生</a></li>
-					<li><a href="">1.有没有人告诉你 - 陈楚生</a></li>
+					<li><a href=""><span>1.</span>有没有人告诉你 - 陈楚生<div></div></a></li>
+					<li><a href=""><span>2.</span>改变自己 - 王力宏<div></div></a></li>
+					<li><a href=""><span>3.</span>还不是因为爱 - 苏醒<div></div></a></li>
+					<li><a href=""><span>4.</span>西界 - 林俊杰<div></div></a></li>
+					<li><a href=""><span>5.</span>我们的歌 - 王力宏<div></div></a></li>
+					<li><a href=""><span>6.</span>如果你也听说 - 张惠妹<div></div></a></li>
+					<li><a href=""><span>7.</span>热浪 - 温岚<div></div></a></li>
+					<li><a href=""><span>6.</span>少年游 - 魏晨 - 快乐男声<div></div></a></li>
 				</ul>
-				<a href="" class="foot">试听全部</a>	
+				<a href="" class="footer">试听全部</a>	
 				</div>
 			</div>	
+			</div>
+			<div class="footl">
+				<div class="footr">
+					<div class="foot"></div>
+				</div>
 			</div>
 		</div>
 	</div>
